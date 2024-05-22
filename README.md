@@ -12,7 +12,7 @@ no of problems not tried : 0
 ## ps2
 question accepted: 3
 
-no. of problems tried but not accepted : 3
+no. of problems tried but not accepted : 2
 
 no of problems not tried : 0
 
