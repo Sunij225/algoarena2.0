@@ -44,7 +44,6 @@ signed main()
   while(n--){
     num%=MOD;
     sum%=MOD;
-    product%=MOD;
     int x,t;
     cin>>x>>t;
     t1*=(t+1);
@@ -54,18 +53,19 @@ signed main()
     v.pb(p);
  
     num*=(t+1);
-    sum*=(pow(x,t+1)-1)/(x-1);
+    sum*=((pow(x,t+1)-1)*pow(x-1,MOD-2))%MOD;
     num%=MOD;
     sum%=MOD;
+    t1%=(MOD-1);
   }
   for(int i=0;i<t2;i++){
     product%=MOD;
-    int temp=t1/(v[i].ss+1);
-    v[i].ss=v[i].ss*(v[i].ss+1)/2;
-    v[i].ss*=temp;
+    v[i].ss=(v[i].ss*t1)/2;
+    v[i].ss%=MOD-1;
     product*=(pow(v[i].ff,v[i].ss));
     product%=MOD;
   }
   cout<<num<<" "<<sum<<" "<<product;
  
    return 0;
+}
