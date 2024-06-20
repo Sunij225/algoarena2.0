@@ -31,9 +31,9 @@ no. of problems tried but not accepted : 5
 no of problems not tried : 0
 
 ## ps5
-question accepted: 9 
+question accepted: 10
 
-no. of problems tried but not accepted : 5
+no. of problems tried but not accepted : 4
 
 no of problems not tried : 0
 
